@@ -2,8 +2,7 @@
 
 **MTH4800 – Innovation Campus Artificial Intelligence**
 
-**Group 14 – Assignment 1: Project Selection & Exploratory Data Analysis**
-
+**Group 14 – Assignment 1 & Assignment 2: AI Building Energy Advisor**
 
 ## Project Overview
 
@@ -53,12 +52,21 @@ Random Forest achieved lower prediction errors and higher R² scores on both tar
 
 ## How to Run
 
-1. Open `samsung_project.ipynb` in Google Colab.
+1. Open [Assignment 1 Notebook](Assignment_1.ipynb) in Google Colab.
 2. Download the Energy Efficiency dataset from the source above.
 3. Run the notebook cells.
 4. Upload the CSV file when prompted.
 5. Review the EDA visualizations and model results.
 
+### Running Assignment 2
+
+1. Open [Assignment 2 Notebook](Assignment_2.ipynb) in Google Colab.
+2. Download the UCI Energy Efficiency dataset and prepare the `energy_efficiency_data.csv` file.
+3. Run the notebook cells in order and upload the CSV file when prompted.
+4. Upload the Istanbul Atatürk Airport TMYx 2009–2023 EPW weather file when prompted.
+5. Review the model evaluation results, cross-validation experiments, feature importance analysis, and Istanbul climate visualizations.
+
+Note: The notebook uses manual file uploads. The Istanbul weather analysis is separate from the machine learning model training.
 ## Project Progress & Future Development
 
 **Assignment 1 — Completed:** Project selection, dataset exploration, exploratory data analysis, and initial machine learning experiments.
@@ -103,7 +111,7 @@ Future work will investigate generating additional Istanbul-specific building si
 
 ### Assignment 2 Notebook
 
-[Open Assignment 2 Notebook](AI_Building_Energy_Advisor_Assignment2%20son.ipynb)
+[Open Assignment 2 Notebook](Assignment_2.ipynb)
 ## Team
 
 - Ayşe Canan Çalışkan
