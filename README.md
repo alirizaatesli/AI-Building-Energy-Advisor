@@ -59,22 +59,57 @@ Random Forest achieved lower prediction errors and higher R² scores on both tar
 4. Upload the CSV file when prompted.
 5. Review the EDA visualizations and model results.
 
-## Future Development
+## Project Progress & Future Development
 
-**Assignment 2:** Develop a Streamlit application that allows users to enter building characteristics and obtain heating and cooling load predictions.
+**Assignment 1 — Completed:** Project selection, dataset exploration, exploratory data analysis, and initial machine learning experiments.
 
-**Assignment 3:** Test the application with different inputs, evaluate model limitations, document ethical considerations, and prepare the final report and demonstration.
+**Assignment 2 — Completed:** Extended model evaluation, random and geometry-aware cross-validation, Leave-One-Geometry-Out validation, feature importance analysis, and separate Istanbul climate data analysis.
 
+**Future Development:** Investigate Istanbul-specific EnergyPlus simulations, improve generalization to unseen building geometries, and explore a possible interactive application for building heating and cooling load predictions.
+
+**Assignment 3:** Further development and evaluation will follow the official assignment requirements.
 ## Limitations
 
 The model is trained on simulated building configurations. Predictions should not be interpreted as actual electricity bills or guaranteed energy savings. Real-world validation would be required before practical deployment.
+## Assignment 2: Model Exploration & Results
 
+In Assignment 2, we extended our AI Building Energy Advisor project by evaluating machine learning models and investigating their ability to generalize to unseen building geometries.
+
+### Work Completed
+
+- Analyzed the UCI Energy Efficiency dataset containing 768 simulated building configurations, 8 input features, and 2 prediction targets.
+- Trained and evaluated Linear Regression and Random Forest models to predict Heating Load and Cooling Load.
+- Evaluated model performance using MAE, RMSE, and R².
+- Applied random 5-fold cross-validation and geometry-aware 4-fold GroupKFold validation.
+- Conducted Leave-One-Geometry-Out (LOGO) validation to examine performance on previously unseen geometries.
+- Analyzed feature importance, glazing area, and building orientation.
+- Analyzed Istanbul Atatürk Airport TMYx 2009–2023 weather data separately using an EPW file.
+
+### Key Findings
+
+Random Forest achieved strong results under random validation. However, performance decreased substantially when models were evaluated on previously unseen building geometries.
+
+The dataset contains only 12 unique base geometries, each represented by 64 configurations.
+
+Under full-dataset geometry-aware GroupKFold validation, Linear Regression outperformed Random Forest for both heating and cooling load prediction.
+
+### Limitations and Future Work
+
+The models were developed using simulated data and have not been validated using measured energy consumption from real buildings.
+
+The Istanbul climate analysis was conducted separately and was not used to train the current machine learning models.
+
+Future work will investigate generating additional Istanbul-specific building simulations using EnergyPlus and evaluating glazing ratio and orientation under controlled conditions.
+
+### Assignment 2 Notebook
+
+[Open Assignment 2 Notebook](AI_Building_Energy_Advisor_Assignment2%20son.ipynb)
 ## Team
 
 - Ayşe Canan Çalışkan
 - Tuğba Karademir
 - Ali Rıza Ateşli
-
+- Ebubekir Diker
 ## References
 
 Tsanas, A., & Xifara, A. (2012). Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools. *Energy and Buildings, 49*, 560–567.
