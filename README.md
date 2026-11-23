@@ -147,6 +147,28 @@ Although Random Forest performed very well under random splitting, geometry-awar
 
 This highlights the importance of selecting validation strategies that reflect the intended generalization task.
 
+## Required Data Files
+
+To reproduce the Assignment 2 experiments, two external data files are required:
+
+**1. Building Energy Efficiency Dataset**
+
+- Source: [UCI Energy Efficiency Dataset](https://archive.ics.uci.edu/dataset/242/energy+efficiency)
+- Required filename: `energy_efficiency_data.csv`
+- Contains 768 simulated building configurations with 8 input features and 2 prediction targets.
+
+**2. Istanbul Weather Data**
+
+- Source: [Climate.OneBuilding](https://climate.onebuilding.org/)
+- Weather station: Istanbul Atatürk Airport, Türkiye
+- Dataset: TMYx 2009–2023
+- Required filename: `TUR_IB_Istanbul-Ataturk.AP.170600_TMYx.2009-2023.epw`
+- Contains 8,760 hourly weather records.
+
+Both files must be downloaded separately and uploaded manually when prompted in Google Colab.
+
+**Important:** The Istanbul EPW data are used only for climate analysis, not for training or validating the machine learning models.
+
 ## How to Run
 
 ### Assignment 1
